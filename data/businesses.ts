@@ -23,7 +23,7 @@ export const businesses: BusinessItem[] = [
     nome: 'AV Prospector',
     descricao:
       'Plataforma de prospecção em massa para produtoras audiovisuais. Encontre e aborde centenas de clientes potenciais em minutos — sem planilha, sem achismo.',
-    url: 'https://avprospector.com',
+    url: 'https://avprospector.com/landing',
     cta: 'Acessar plataforma',
   },
   {
