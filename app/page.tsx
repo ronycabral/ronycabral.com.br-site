@@ -112,25 +112,45 @@ export default function Home() {
                     {biz.nome}
                   </h3>
 
-                  <a
-                    href={biz.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-glass"
-                    style={{
-                      background: cfg.gradient,
-                      boxShadow: cfg.shadow,
-                      color: '#000',
-                      fontFamily: 'DM Sans, sans-serif',
-                      fontWeight: 700,
-                      borderRadius: 8,
-                      display: 'inline-block',
-                      padding: 'clamp(8px, 1.5vw, 16px) clamp(16px, 3vw, 40px)',
-                      fontSize: 'clamp(0.875rem, 1.5vw, 1.125rem)',
-                    }}
-                  >
-                    {biz.cta}
-                  </a>
+                  {biz.id === 2 ? (
+                    <span
+                      className="btn-glass"
+                      style={{
+                        background: cfg.gradient,
+                        boxShadow: cfg.shadow,
+                        color: '#000',
+                        fontFamily: 'DM Sans, sans-serif',
+                        fontWeight: 700,
+                        borderRadius: 8,
+                        display: 'inline-block',
+                        padding: 'clamp(8px, 1.5vw, 16px) clamp(16px, 3vw, 40px)',
+                        fontSize: 'clamp(0.875rem, 1.5vw, 1.125rem)',
+                        cursor: 'default',
+                      }}
+                    >
+                      {biz.cta}
+                    </span>
+                  ) : (
+                    <a
+                      href={biz.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-glass"
+                      style={{
+                        background: cfg.gradient,
+                        boxShadow: cfg.shadow,
+                        color: '#000',
+                        fontFamily: 'DM Sans, sans-serif',
+                        fontWeight: 700,
+                        borderRadius: 8,
+                        display: 'inline-block',
+                        padding: 'clamp(8px, 1.5vw, 16px) clamp(16px, 3vw, 40px)',
+                        fontSize: 'clamp(0.875rem, 1.5vw, 1.125rem)',
+                      }}
+                    >
+                      {biz.cta}
+                    </a>
+                  )}
                 </div>
               </article>
             )
