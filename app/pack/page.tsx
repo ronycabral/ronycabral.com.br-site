@@ -8,7 +8,7 @@ const products = [
     url: 'https://pay.kiwify.com.br/4lFdT2t',
     cta: 'Comprar agora',
     cor: '#C9A84C',
-    imagem: '/images/foto-cllr-pack-sfx.png',
+    imagem: '/images/CAPA_POWERGRADES.png',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const products = [
     url: 'https://pay.kiwify.com.br/PGNK5zP',
     cta: 'Comprar agora',
     cor: '#3B82F6',
-    imagem: '/images/foto-cllr-pack-sfx.png',
+    imagem: '/images/CAPA_LUTS.png',
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     url: 'https://pay.kiwify.com.br/Q3grYGh',
     cta: 'Comprar agora',
     cor: '#22C55E',
-    imagem: '/images/foto-cllr-pack-sfx.png',
+    imagem: '/images/CAPA_SFX.png',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const products = [
     url: 'https://pay.kiwify.com.br/sOvOxA6',
     cta: 'Comprar agora',
     cor: '#A855F7',
-    imagem: '/images/foto-cllr-pack-sfx.png',
+    imagem: '/images/CAPA_OVERLAYS.png',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const products = [
     url: 'https://pay.kiwify.com.br/o9OH9bT',
     cta: 'Comprar agora',
     cor: '#EF4444',
-    imagem: '/images/foto-cllr-pack-sfx.png',
+    imagem: '/images/CAPA_TRILHAS.png',
   },
 ]
 
