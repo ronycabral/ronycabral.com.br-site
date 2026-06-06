@@ -1,0 +1,179 @@
+/* eslint-disable @next/next/no-img-element */
+
+const products = [
+  {
+    id: 1,
+    nome: 'POWERGRADES',
+    descricao: 'Grades de cor cinematográficas para DaVinci Resolve. Crie imagens com profundidade e identidade visual em segundos.',
+    url: '#',
+    cta: 'Comprar agora',
+    cor: '#C9A84C',
+    imagem: '/images/foto-cllr-pack-sfx.png',
+  },
+  {
+    id: 2,
+    nome: 'LUTS',
+    descricao: 'LUTs prontas para DaVinci e Premiere. Aplique looks profissionais com um clique.',
+    url: '#',
+    cta: 'Comprar agora',
+    cor: '#3B82F6',
+    imagem: '/images/foto-cllr-pack-sfx.png',
+  },
+  {
+    id: 3,
+    nome: 'SOUND EFFECTS',
+    descricao: 'Biblioteca de SFX de impacto usados nos maiores eventos do Brasil. Transições, risers, impactos e muito mais.',
+    url: '#',
+    cta: 'Comprar agora',
+    cor: '#22C55E',
+    imagem: '/images/foto-cllr-pack-sfx.png',
+  },
+  {
+    id: 4,
+    nome: 'OVERLAYS',
+    descricao: 'Overlays de luz, partículas e texturas para elevar qualquer edição. Drag and drop em qualquer software.',
+    url: '#',
+    cta: 'Comprar agora',
+    cor: '#A855F7',
+    imagem: '/images/foto-cllr-pack-sfx.png',
+  },
+  {
+    id: 5,
+    nome: 'TRILHAS SONORAS',
+    descricao: 'Trilhas autorais para eventos, institucionais e reels. Música que transforma a percepção do conteúdo.',
+    url: '#',
+    cta: 'Comprar agora',
+    cor: '#EF4444',
+    imagem: '/images/foto-cllr-pack-sfx.png',
+  },
+]
+
+export default function PackPage() {
+  return (
+    <main style={{ color: 'var(--text)', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      {/* ── HEADER ───────────────────────────────────────────────────── */}
+      <section className="section-offset pt-8 pb-4">
+        <a
+          href="/"
+          style={{
+            fontFamily: "'Impact', 'Arial Narrow', sans-serif",
+            fontWeight: 900,
+            letterSpacing: '0.04em',
+            lineHeight: 1,
+            textTransform: 'uppercase',
+            color: '#fff',
+            textDecoration: 'none',
+            fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+          }}
+        >
+          RONY CABRAL
+        </a>
+      </section>
+
+      {/* ── TÍTULO ───────────────────────────────────────────────────── */}
+      <section className="section-offset pt-10 pb-2">
+        <h1
+          style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: 400,
+            letterSpacing: '0.04em',
+            lineHeight: 1,
+            fontSize: 'clamp(3rem, 10vw, 7rem)',
+            color: '#fff',
+          }}
+        >
+          PACKS CRIATIVOS
+        </h1>
+        <p
+          style={{
+            fontFamily: 'DM Sans, sans-serif',
+            color: 'var(--muted)',
+            fontSize: 'clamp(0.95rem, 1.5vw, 1.125rem)',
+            marginTop: '12px',
+          }}
+        >
+          Assets profissionais usados nos meus projetos.
+        </p>
+      </section>
+
+      {/* ── PRODUTOS ─────────────────────────────────────────────────── */}
+      <section className="section-offset pb-24 mt-8" style={{ flex: 1 }}>
+        <div className="flex flex-col max-w-[900px]">
+          {products.map((product, i) => (
+            <article
+              key={product.id}
+              className="business-card animate-fade-in-up"
+              style={{ animationDelay: `${i * 80}ms` }}
+            >
+              {/* Imagem */}
+              <div className="card-image-wrapper">
+                <img src={product.imagem} alt={product.nome} />
+              </div>
+
+              {/* Conteúdo */}
+              <div className="card-content">
+                <h3
+                  style={{
+                    fontFamily: "'Bebas Neue', sans-serif",
+                    fontWeight: 400,
+                    color: '#fff',
+                    lineHeight: 1,
+                    fontSize: 'clamp(2rem, 5vw, 4rem)',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  {product.nome}
+                </h3>
+
+                <p
+                  style={{
+                    fontFamily: 'DM Sans, sans-serif',
+                    color: 'var(--muted)',
+                    fontSize: 'clamp(0.875rem, 1.4vw, 1rem)',
+                    lineHeight: 1.6,
+                    maxWidth: '480px',
+                  }}
+                >
+                  {product.descricao}
+                </p>
+
+                <a
+                  href={product.url}
+                  className="btn-glass"
+                  style={{
+                    background: product.cor,
+                    color: '#fff',
+                    fontFamily: 'DM Sans, sans-serif',
+                    fontWeight: 700,
+                    borderRadius: 8,
+                    display: 'inline-block',
+                    padding: 'clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px)',
+                    fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
+                    textDecoration: 'none',
+                    marginTop: '8px',
+                  }}
+                >
+                  {product.cta}
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FOOTER ───────────────────────────────────────────────────── */}
+      <footer
+        style={{
+          textAlign: 'center',
+          padding: '24px 0',
+          color: 'var(--muted)',
+          fontFamily: 'DM Sans, sans-serif',
+          fontSize: '0.875rem',
+          borderTop: '1px solid #1a1a2e',
+        }}
+      >
+        © 2025 Rony Cabral
+      </footer>
+    </main>
+  )
+}
