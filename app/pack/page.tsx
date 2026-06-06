@@ -5,7 +5,7 @@ const products = [
     id: 1,
     nome: 'POWERGRADES',
     descricao: 'Grades de cor cinematográficas para DaVinci Resolve. Crie imagens com profundidade e identidade visual em segundos.',
-    url: '#',
+    url: 'https://pay.kiwify.com.br/4lFdT2t',
     cta: 'Comprar agora',
     cor: '#C9A84C',
     imagem: '/images/foto-cllr-pack-sfx.png',
@@ -14,7 +14,7 @@ const products = [
     id: 2,
     nome: 'LUTS',
     descricao: 'LUTs prontas para DaVinci e Premiere. Aplique looks profissionais com um clique.',
-    url: '#',
+    url: 'https://pay.kiwify.com.br/PGNK5zP',
     cta: 'Comprar agora',
     cor: '#3B82F6',
     imagem: '/images/foto-cllr-pack-sfx.png',
@@ -23,7 +23,7 @@ const products = [
     id: 3,
     nome: 'SOUND EFFECTS',
     descricao: 'Biblioteca de SFX de impacto usados nos maiores eventos do Brasil. Transições, risers, impactos e muito mais.',
-    url: '#',
+    url: 'https://pay.kiwify.com.br/Q3grYGh',
     cta: 'Comprar agora',
     cor: '#22C55E',
     imagem: '/images/foto-cllr-pack-sfx.png',
@@ -32,7 +32,7 @@ const products = [
     id: 4,
     nome: 'OVERLAYS',
     descricao: 'Overlays de luz, partículas e texturas para elevar qualquer edição. Drag and drop em qualquer software.',
-    url: '#',
+    url: 'https://pay.kiwify.com.br/sOvOxA6',
     cta: 'Comprar agora',
     cor: '#A855F7',
     imagem: '/images/foto-cllr-pack-sfx.png',
@@ -41,7 +41,7 @@ const products = [
     id: 5,
     nome: 'TRILHAS SONORAS',
     descricao: 'Trilhas autorais para eventos, institucionais e reels. Música que transforma a percepção do conteúdo.',
-    url: '#',
+    url: 'https://pay.kiwify.com.br/o9OH9bT',
     cta: 'Comprar agora',
     cor: '#EF4444',
     imagem: '/images/foto-cllr-pack-sfx.png',
@@ -139,6 +139,8 @@ export default function PackPage() {
 
                 <a
                   href={product.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-glass"
                   style={{
                     background: product.cor,
