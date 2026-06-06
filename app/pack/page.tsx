@@ -107,7 +107,11 @@ export default function PackPage() {
             >
               {/* Imagem */}
               <div className="card-image-wrapper">
-                <img src={product.imagem} alt={product.nome} />
+                {product.id === 1 && <img src="/images/CAPA_POWERGRADES.png" alt="Powergrades" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
+                {product.id === 2 && <img src="/images/CAPA_LUTS.png" alt="Luts" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
+                {product.id === 3 && <img src="/images/CAPA_SFX.png" alt="Sound Effects" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
+                {product.id === 4 && <img src="/images/CAPA_OVERLAYS.png" alt="Overlays" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
+                {product.id === 5 && <img src="/images/CAPA_TRILHAS.png" alt="Trilhas Sonoras" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
               </div>
 
               {/* Conteúdo */}
