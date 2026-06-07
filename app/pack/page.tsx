@@ -2,6 +2,15 @@
 
 const products = [
   {
+    id: 6,
+    nome: 'POWERGRADES + LUTS',
+    descricao: 'Combo completo de cor para DaVinci Resolve. PowerGrades e LUTs feitos para trabalhar juntos — do básico ao cinemático.',
+    url: 'https://pay.kiwify.com.br/HY9MRAo',
+    cta: 'Comprar agora',
+    cor: '#C9A84C',
+    imagem: '/images/CAPA_COMBO.png',
+  },
+  {
     id: 1,
     nome: 'POWERGRADES',
     descricao: 'Grades de cor cinematográficas para DaVinci Resolve. Crie imagens com profundidade e identidade visual em segundos.',
@@ -112,6 +121,7 @@ export default function PackPage() {
                 {product.id === 3 && <img src="/images/CAPA_SFX.png" alt="Sound Effects" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
                 {product.id === 4 && <img src="/images/CAPA_OVERLAYS.png" alt="Overlays" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
                 {product.id === 5 && <img src="/images/CAPA_TRILHAS.png" alt="Trilhas Sonoras" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
+                {product.id === 6 && <img src="/images/CAPA_COMBO.png" alt="Powergrades + Luts" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />}
               </div>
 
               {/* Conteúdo */}
